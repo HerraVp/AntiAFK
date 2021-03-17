@@ -1,0 +1,1 @@
+# antiAFK-for-any-game
