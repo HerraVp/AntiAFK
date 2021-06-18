@@ -12,7 +12,7 @@ from pynput.keyboard import Key, Controller
 def PressKey(key, controller):
     print("[BOT]: Pressing %s" % key)
     controller.press(key)
-    time.sleep(15)
+    time.sleep(3)
     # print("[BOT]: Releasing %s" % key)
     controller.release(key)
 
