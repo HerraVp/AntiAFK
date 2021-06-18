@@ -9,7 +9,7 @@ import threading, time
 from pynput.keyboard import Key, Controller
 
 
-def PressKey(key, controller):
+def pressKey(key, controller):
     print("[BOT]: Pressing %s" % key)
     controller.press(key)
     time.sleep(3)
@@ -31,8 +31,8 @@ class Bot(threading.Thread):
                 while self.paused:
                     self.pause_condition.wait()
 
-                PressKey(self.keys[0], self.keyboard)
-                PressKey(self.keys[2], self.keyboard)
+                pressKey(self.keys[0], self.keyboard)
+                pressKey(self.keys[2], self.keyboard)
 
             time.sleep(5)
 

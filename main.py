@@ -3,8 +3,6 @@
 #   17.3.2021      #
 #                  #
 ####################
-
-
 import sys, bot, keyboard
 from time import sleep
 
@@ -15,7 +13,7 @@ try:
     last_state = False
     first_time = True
 
-    print('AntiAFK script by Vp started, press "%s" key to start/stop bot.' % toggle_button)
+    print('[AntiAFK v1.0] by Vp started, press "%s" key to start/stop bot.' % toggle_button)
 
     while True:
         key_down = keyboard.is_pressed(toggle_button)
