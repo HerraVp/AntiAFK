@@ -3,8 +3,17 @@
 #   17.3.2021      #
 #                  #
 ####################
+
+
 import sys, bot, keyboard
-from time import sleep
+import time
+
+v = "v1.1"
+
+print("===================================")
+print("Made by https://github.com/HerraVp")
+print("===================================")
+time.sleep(2)
 
 try:
     BOT = bot.Bot()
@@ -13,7 +22,7 @@ try:
     last_state = False
     first_time = True
 
-    print('[AntiAFK v1.0] by Vp started, press "%s" key to start/stop bot.' % toggle_button)
+    print(f'[AntiAFK {v} by Vp] Started, press "%s" key to start/stop bot.' % toggle_button)
 
     while True:
         key_down = keyboard.is_pressed(toggle_button)
@@ -22,7 +31,7 @@ try:
             if last_state:
                 enabled = not enabled
                 if enabled and first_time:
-                    print("\nStarting bot...")
+                    print(f"\n[AntiAFK {v} by Vp] Starting bot...")
                     BOT.start()
                     first_time = False
                 elif enabled:
