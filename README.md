@@ -1,9 +1,8 @@
-# antiAFK for any game
+# AntiAFK for any game
 
+a simple Python script to stay AFK without getting kicked in any videogame.
 
-Python script to stay AFK without getting kicked in any videogame.
-
-Now available in exe file: https://github.com/HerraVp/AntiAFK/releases/tag/v1.1.2
+Now available in [.exe file!](https://github.com/HerraVp/AntiAFK/releases/tag/v1.1.2)
 
 Requirements:
 
